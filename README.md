@@ -48,9 +48,9 @@ Open `sheets2slides.js` in your favorite text editor to add your documents and c
 
 ## Data Mapping (Required)
 
-`sheets2SlidesDictionary` is the bridge between a spreadsheet and a presentation. The *key* of the dictionary (right side of the colon) should be a string corresponding to the column of the data in the spreadsheet. The *value* of the dictionary (left side of the colon) is the token, or unique string, that will be replaced by the spreadsheet data. 
+**`sheets2SlidesDictionary`** is the bridge between a spreadsheet and a presentation. The ***key*** of the dictionary (right side of the colon) should be a string corresponding to the column of the data in the spreadsheet. The ***value*** of the dictionary (left side of the colon) is the token, or unique string, that will be replaced by the spreadsheet data. 
 
-For example, let's say you have a spreadsheet with names and want to add someone's first name to a slide. You could add **"{{FIRST_NAME}}"** in a text box to your template slide wherever you want someone's first name to appear. Then, you would make the *key* be **"A"**, where "A" is the letter of the column with first name data, and make the *value* be the "{{FIRST_NAME}}" token.
+For example, let's say you have a spreadsheet with names and want to add someone's first name to a slide. You could add **"{{FIRST_NAME}}"** in a text box to your template slide wherever you want someone's first name to appear. Then, you would make the *key* be **"A"**, where **"A"** is the letter of the column corresponding to first names, and make the *value* be the token **"{{FIRST_NAME}}"**.
 
 **Example**
 ```
