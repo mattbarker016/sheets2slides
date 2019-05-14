@@ -1,0 +1,16 @@
+{
+  "name": "sheets2slides",
+  "version": "1.0.0",
+  "description": "A tool to take spreadsheet data and create slides based on a template.",
+  "main": "lifted.js",
+  "dependencies": {
+    "googleapis": "^39.2.0",
+    "open": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Barker",
+  "license": "ISC"
+}
