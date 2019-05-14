@@ -28,10 +28,10 @@ This script requires an existing Google Sheets spreadsheet with existing data.
 
 # Installation
 
-1. Download or clone this repository.
+1. [Download](https://github.com/mattbarker016/sheets2slides/archive/master.zip) or clone this repository.
 2. Open Terminal / Command Prompt. Type `cd`, then one space, and then drag the folder into the window to copy the file path. Hit Enter.
 3. Run `npm install` to install dependencies used.
-4. If you have everything configured properly, run `node sheets2slides.js`.
+4. If you have everything configured properly, run `node sheets2slides.js`. See **Customizations** for more information.
 
 ## Token Generation & Permissions
 
