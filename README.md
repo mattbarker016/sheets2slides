@@ -17,6 +17,7 @@ A tool to take Google Sheets data and create Google Slides based on an existing 
 This script requires an existing Google Slides presentation with a pre-made template slide. The first slide in the presentation will be used as a **template**, and generated slides will be added to the end of the presentation. Your template slide should have tokens on them, or unique strings that will be replaced by actual data. See **Files** under **Customization** for more information.
 
 **Example Template** • [Example Google Slides Document](https://docs.google.com/presentation/d/1WecOJ0-4SowO9R2hyPH8DHO8kf6vzm8X7hH_pN4IEPM/edit?usp=sharing)
+
 ![Template Slide Example](template-example.png)
 
 In this example, "To:" and "From:" would not be changed and remain in the generated slides.
