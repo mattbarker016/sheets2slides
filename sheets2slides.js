@@ -6,8 +6,8 @@
 
 // Data Variables
 
-// The identifier of the data spreadsheet. This is the long string of text
-// between (or after) "spreadsheets/d/" and "/edit" in the spreadsheet URL.
+// The identifier of the data spreadsheet used for data. This is the long string 
+// of text between (or after) "spreadsheets/d/" and "/edit" in the spreadsheet URL.
 var spreadsheetID = "1e-jWpAv2PxwuPq-FVrsvRUKsTqqDZH912HCENwpBGDc"
 
 // The name of the specific sheet with the data.
@@ -26,6 +26,7 @@ var sheets2SlidesDictionary = {
     "D": "{{RECIPIENT_NAME}}",
 
     "F": "{{MESSAGE}}"
+
 }
 
 // The first column with valid data.
@@ -196,6 +197,8 @@ async function main(auth) {
 
     var presentationUrl = `https://docs.google.com/presentation/d/${presentationID}`;
     console.log(`Check them out at ${presentationUrl}`);
+
+    console.log("IMPORTANT: Make sure you manually review slides in case any data values caused unexpected results with your template!")
 
 }
 
