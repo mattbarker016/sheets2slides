@@ -6,9 +6,9 @@ A tool to take Google Sheets data and create Google Slides based on an existing 
 ## Download & Setup
 
 1. Make sure you have **npm** and **Node.js** installed! npm is installed with Node.js, so you can nab both by downloading the LTS (Long Term Support) Node.js version [**here**](https://nodejs.org/en/).
-2. Under Step 1 on Google's Node.js [Quick Start Guide](https://developers.google.com/slides/quickstart/nodejs), click **Enable the Google Slides API** for your Google account. When you are finished, make sure you **Download Client Configuration**. This will download a file called `credientials.json` that you will need to run the script.
+2. Under Step 1 on Google's Node.js [Quick Start Guide](https://developers.google.com/slides/quickstart/nodejs), click **Enable the Google Slides API** for your Google account. Make sure this account has access to the files you want to use! When you are finished, make sure you **Download Client Configuration**. This will download a file called `credentials.json` that you should include in the root directory.
 
->Note: Make sure the Google account you use has access to the spreadsheets and presentations you will be using!
+**Important:** You need to create your own `credentials.json` file to use this script! The provided file is included for template purposes only, and should be replaced with your own file.
 
 ## Required Google Documents
 
@@ -43,9 +43,9 @@ Open `sheets2slides.js` in your favorite text editor to add your documents and c
 
 ## Files (Required)
 
-- **`spreadsheetID`**: The identifier of the spreadsheet used for data. This is the long string of text between (or after) "spreadsheets/d/" and "/edit" in the spreadsheet URL.
+- **`spreadsheetID`**: The identifier of the spreadsheet used for data. This is the long string of text between (or after) `spreadsheets/d/` and `/edit` in the spreadsheet URL.
 - **`sheetName`**: The name of the specific sheet with the data, which appears on the bottom of the spreadsheet. This is different from the spreadsheet file name.
-- **`presentationID`**: The identifier of the template presentation. This is the long string of text between (or after) "presentation/d/" and "/edit" in the spreadsheet URL.
+- **`presentationID`**: The identifier of the template presentation. This is the long string of text between (or after) `presentation/d/` and `/edit` in the spreadsheet URL.
 
 ## Data Mapping (Required)
 
@@ -66,7 +66,7 @@ var sheets2SlidesDictionary = {
 }
 ```
 
->Note: Make sure you add a comma after every line, *except* for the last one!
+Note: Make sure you add a comma after every line, *except* for the last one!
 
 ## Other
 
