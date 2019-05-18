@@ -28,10 +28,9 @@ This script requires an existing Google Sheets spreadsheet with existing data.
 
 # Installation
 
-1. [Download](https://github.com/mattbarker016/sheets2slides/archive/master.zip) or clone this repository.
-2. Open Terminal / Command Prompt. Type `cd`, then one space, and then drag the folder into the window to copy the file path. Hit Enter.
-3. Run `npm install` to install dependencies used.
-4. If you have everything configured properly, run `node sheets2slides.js`. See **Customizations** for more information.
+1. [Download](https://github.com/mattbarker016/sheets2slides/archive/master.zip) or clone this repository. Navigate to the root directory. If you need help, see **Tutorial #1** below.
+2. Run `npm install` to install the dependencies used.
+3. If you have everything configured properly, run `node sheets2slides.js`. See **Customizations** for more information.
 
 ## Token Generation & Permissions
 
@@ -43,15 +42,15 @@ Open `sheets2slides.js` in your favorite text editor to add your documents and c
 
 ## Files (Required)
 
-- **`spreadsheetID`**: The identifier of the spreadsheet used for data. This is the long string of text between (or after) `spreadsheets/d/` and `/edit` in the spreadsheet URL.
+- **`spreadsheetID`**: The identifier of the spreadsheet used for data. This is the long string of text after `spreadsheets/d/` in the spreadsheet URL.
 - **`sheetName`**: The name of the specific sheet with the data, which appears on the bottom of the spreadsheet. This is different from the spreadsheet file name.
-- **`presentationID`**: The identifier of the template presentation. This is the long string of text between (or after) `presentation/d/` and `/edit` in the spreadsheet URL.
+- **`presentationID`**: The identifier of the template presentation. This is the long string of text after `presentation/d/` in the spreadsheet URL.
 
 ## Data Mapping (Required)
 
-**`sheets2SlidesDictionary`** is the bridge between a spreadsheet and a presentation. The ***key*** of the dictionary (right side of the colon) should be a string corresponding to the column of the data in the spreadsheet. The ***value*** of the dictionary (left side of the colon) is the token, or unique string, that will be replaced by the spreadsheet data. 
+**`sheets2SlidesDictionary`** is the bridge between a spreadsheet and a presentation. The ***key*** of the dictionary (left side of the colon) should be a string corresponding to the column of the data in the spreadsheet. The ***value*** of the dictionary (right side of the colon) is the token, or unique string, that will be replaced by the spreadsheet data. 
 
-For example, let's say you have a spreadsheet with names and want to add someone's first name to a slide. You could add **"{{FIRST_NAME}}"** in a text box to your template slide wherever you want someone's first name to appear. Then, you would make the *key* be **"A"**, where **"A"** is the letter of the column corresponding to first names, and make the *value* be the token **"{{FIRST_NAME}}"**.
+For example, let's say you have a spreadsheet with names and want to add someone's first name to a slide. On Google Slides, you would add **"{{FIRST_NAME}}"** in a text box on your template slide wherever you want someone's first name to appear. Then, you would make the dictionary *key* be **"A"**, where **"A"** is the letter of the spreadsheet column corresponding to first names, and make the dictionary *value* be the token **"{{FIRST_NAME}}"**.
 
 **Example**
 ```
@@ -70,7 +69,19 @@ Note: Make sure you add a comma after every line, *except* for the last one!
 
 ## Other
 
-You can modify the range of data you query from the spreadsheet. By default, the data spans from columns A-Z and rows 1-1000. You can leave these only because the script ignores empty rows.
+You can modify the range of data you query from the spreadsheet. By default, the data spans from columns A-Z and rows 1-1000. If your data set is smaller, you can still leave these alone because the script ignores empty rows.
+
+# Tutorials
+
+This section is to provide a step-by-step guide for certain instructions that might not be immediately clear for first-time users.
+
+## 1. Navigate the File Hierarchy
+
+1. Open a new shell window. This is called Terminal on macOS and Command Prompt on Windows.
+2. Type the command `cd`, which stands for **change directory**.
+3. Press the space bar once to put a space between the command and the argument, or the location we want to navigate to.
+4. In your file browser, drag the folder of the desired folder (in this case, the `sheets2slides` folder just added) into the shell window to copy the file path.
+5. Hit Enter. As a sanity check, you can type `ls`, followed by enter, and you should see the contents of the folder you navigated to. 
 
 # Troubleshooting
 
