@@ -40,7 +40,7 @@ If this is your first time running the script, or your token has expired, you wi
 
 Open `sheets2slides.js` in your favorite text editor to add your documents and customize options at the top of the file.
 
-## Files (Required)
+## Constants (Required)
 
 - **`spreadsheetID`**: The identifier of the spreadsheet used for data. This is the long string of text after `spreadsheets/d/` in the spreadsheet URL.
 - **`sheetName`**: The name of the specific sheet with the data, which appears on the bottom of the spreadsheet. This is different from the spreadsheet file name.
