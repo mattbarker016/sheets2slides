@@ -4,7 +4,7 @@
   "description": "A tool to take spreadsheet data and create slides based on a template.",
   "main": "lifted.js",
   "dependencies": {
-    "googleapis": "^39.2.0",
+    "googleapis": "^118.0.0",
     "open": "^6.0.0"
   },
   "devDependencies": {},
